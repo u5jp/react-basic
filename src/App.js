@@ -1,4 +1,4 @@
-import React,{useReducer} from 'react';
+import React,{memo, useReducer} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import ApiFetch from './components/ApiFetch';
@@ -8,6 +8,7 @@ import ApiFetch from './components/ApiFetch';
 // import TimerContainer from './components/TimerContainer'
 import AppContext from './contexts/AppContext'
 import CompB from './components/CompB';
+import Memo from './components/Memo';
 // import B from './components/B'
 // import BasiceReducer from './components/BasicReducer'
 
@@ -40,8 +41,9 @@ function App() {
             {/* <ApiFetch />
             <B /> */}
             {/* <BasiceReducer /> */}
-            Count {count}
-            <CompB />
+            {/* Count {count}
+            <CompB /> */}
+            <Memo />
           </header>
         </div>
       </AppContext.Provider>
